@@ -1,6 +1,15 @@
+from database import get_all_users
+
+
 def search_students():
 
-    while True:
+
+        users = get_all_users()
+        
+        search = input("Search A User By Project Description Or Agenda Or Skills: ")
+
+        found = False
+
         for user in users:
             if search.lower() in user.projectdescription.lower() or search.lower() in user.agenda.lower() or search.lower() in user.skills.lower():
                 print("--------------------")
@@ -14,5 +23,5 @@ def search_students():
                 print("--------------------")
                 found = True
 
-                if not found:
-                    print("No user found with the given search criteria.") 
+        if not found:
+            print("No user found with the given search criteria.")

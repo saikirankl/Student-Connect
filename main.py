@@ -36,9 +36,6 @@ users = get_all_users()
 
 
 
-search = input("Search A User By Project Description Or Agenda Or Skills: ")
-
-found = False
 
 
 

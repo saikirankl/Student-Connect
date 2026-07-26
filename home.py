@@ -1,3 +1,4 @@
+from search import search_students
 def home_page(logged_in_user):
 
     while True:
@@ -14,7 +15,7 @@ def home_page(logged_in_user):
         choice = input("Choice: ")
 
         if choice == "1":
-            search = search_students
+            search = search_students()
 
         elif choice == "2":
             print("Create a team page coming soon...")
