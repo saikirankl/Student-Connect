@@ -1,6 +1,7 @@
 from user import User
 from database import create_table, get_all_users
 from auth import register, login_user
+from home import home_page
 print("\n🤝 Let's build, learn, and grow together.")
 print("Welcome to Student Connect!")
 
@@ -83,35 +84,7 @@ while True:
 add_users = get_all_users() #get all users from the database
 
 
-while True:
 
-     print(f"\n============================")
-     print(f"👋 Welcome, ")
 
-     print("1. 🏠 Home")
-     print("2. 🔎 Search Students")
-     print("3. 👥 Create Team")
-     print("4. 💬 Messages")
-     print("5. 👤 Profile")
-
-     choice = input("Choose: ")
-     
-     if choice == "1":
-        print("Home page coming soon.")
-        break
-
-     elif choice == "2":
-        print("Search Students page coming soon.")
-        break
-
-     elif choice == "3":
-        print("Create Team coming soon")
-        break
-
-     elif choice == "4":
-        print("Message option coming soon")
-        break
-
-     elif choice == "5":
-        print("Profile option coming soon")
-        break
+if logged_in_user:
+    home_page(logged_in_user)
