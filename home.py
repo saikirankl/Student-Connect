@@ -1,4 +1,6 @@
 from search import search_students
+from profile import profile_page
+
 def home_page(logged_in_user):
 
     while True:
@@ -26,7 +28,7 @@ def home_page(logged_in_user):
             break
 
         elif choice == "4":
-            print("Profile page coming soon...")
+            profile = profile_page()
             break
 
         else:

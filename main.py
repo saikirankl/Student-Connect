@@ -3,6 +3,10 @@ from database import create_table, get_all_users
 from auth import register, login_user
 from home import home_page
 from search import search_students
+from profile import profile_page
+
+
+
 print("\n🤝 Let's build, learn, and grow together.")
 print("Welcome to Student Connect!")
 
