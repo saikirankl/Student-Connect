@@ -14,8 +14,7 @@ def home_page(logged_in_user):
         choice = input("Choice: ")
 
         if choice == "1":
-            print("Search page coming soon...")
-            break
+            search = search_students
 
         elif choice == "2":
             print("Create a team page coming soon...")

@@ -2,6 +2,7 @@ from user import User
 from database import create_table, get_all_users
 from auth import register, login_user
 from home import home_page
+from search import search_students
 print("\n🤝 Let's build, learn, and grow together.")
 print("Welcome to Student Connect!")
 
@@ -40,21 +41,6 @@ search = input("Search A User By Project Description Or Agenda Or Skills: ")
 found = False
 
 
-for user in users:
-    if search.lower() in user.projectdescription.lower() or search.lower() in user.agenda.lower() or search.lower() in user.skills.lower():
-         print("--------------------")
-         print("👤 "f"{user.name}'s information")
-         print("🔢 "f"{user.age} Age")
-         print("🎓 "f"{user.stream} Stream")
-         print("📝 "f"{user.projectdescription} ProjectDescription")
-         print("🎯 "f"{user.agenda} Agenda")
-         print("💻 "f"{user.skills} Skills")
-         print(f"{user.current_stage} Current Stage")
-         print("--------------------")
-         found = True
-
-if not found:
-    print("No user found with the given search criteria.") 
 
 print("\n========== TERMS & CONDITIONS ==========")
 print("1. Be respectful to all users.")
