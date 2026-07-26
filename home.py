@@ -28,7 +28,7 @@ def home_page(logged_in_user):
             break
 
         elif choice == "4":
-            profile = profile_page()
+            profile = profile_page(logged_in_user)
             break
 
         else:
