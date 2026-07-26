@@ -13,6 +13,7 @@ def home_page(logged_in_user):
         print("3. 💬 Messages")
         print("4. 👤 Profile")
         print("5. 🚪 Logout")
+        print("6. 🖋️ Profile")
 
         choice = input("Choice: ")
 
@@ -30,6 +31,12 @@ def home_page(logged_in_user):
         elif choice == "4":
             profile = profile_page(logged_in_user)
             break
+
+        elif choice == "5":
+            print("Logout page coming soon...")
+
+        elif choice == "6":
+            edit_profile(logged_in_user)
 
         else:
             print("Invalid choice.")

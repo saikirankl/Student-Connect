@@ -8,7 +8,7 @@ def create_table():
 
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS users (
-        user_name TEXT,
+        user_name TEXT UNIQUE,
         password TEXT,
         name TEXT,
         age INTEGER,
