@@ -14,7 +14,7 @@ def home_page(logged_in_user):
         print("3. 💬 Messages")
         print("4. 👤 Profile")
         print("5. 🚪 Logout")
-        print("6. 🖋️ Edit Profile")
+        print("6. 🖋️  Edit Profile")
 
         choice = input("Choice: ")
 

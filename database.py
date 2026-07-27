@@ -104,7 +104,6 @@ def login(user_name, password):
     return None
 
 
-import sqlite3
 
 def update_user(user):
 
@@ -120,9 +119,9 @@ def update_user(user):
                 projectdescription =  ? ,       
                 agenda = ?,
                 skills = ?,
-                current_stage = ?,
+                current_stage = ?
             
-            WHERE user_name  = ?   
+                WHERE user_name  = ?   
         """, (
             user.name,
             user.age,

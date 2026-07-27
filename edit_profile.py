@@ -23,33 +23,40 @@ def edit_profile(logged_in_user):
             logged_in_user.name = input("New Name: ")
             update_user(logged_in_user)
             print("Profile Updated Successfully ✅")
+            break
 
         elif choice == "2":
             
             logged_in_user.age = int(input("Age: "))
             update_user(logged_in_user)
             print("Profile Updated Successfully ✅")
+            break
 
         elif choice == "3":
             logged_in_user.stream = input("Stream: ")
             update_user(logged_in_user)
             print("Profile Updated Successfully ✅")
-
+            break
 
         elif choice == "4":
             logged_in_user.agenda = input("Agenda: ")
             update_user(logged_in_user)
             print("Profile Updated Successfully ✅")
+            break
+
 
         elif choice == "5":
             logged_in_user.skills = input("Skills: ")
             update_user(logged_in_user)
             print("Profile Updated Successfully ✅")
+            break
+
 
         elif choice == "6":
             logged_in_user.current_stage = input("Current Stage: ")
             update_user(logged_in_user)
             print("Profile Updated Successfully ✅")
+            break
 
 
         elif choice == "7":
