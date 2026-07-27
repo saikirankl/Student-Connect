@@ -102,3 +102,38 @@ def login(user_name, password):
     )
 
     return None
+
+
+import sqlite3
+
+def update_user(user):
+
+    connect = sqlite3.connect("users.db")
+    cursor = connect.cursor()
+
+    cursor.execute("""
+                UPDATE users
+                SET
+                name = ?,
+                age = ?,
+                stream = ?,
+                projectdescription =  ? ,       
+                agenda = ?,
+                skills = ?,
+                current_stage = ?,
+            
+            WHERE user_name  = ?   
+        """, (
+            user.name,
+            user.age,
+            user.stream,
+            user.projectdescription,
+            user.agenda,
+            user.skills,
+            user.current_stage,
+            user.user_name
+
+        ))
+
+    connect.commit()
+    connect.close()

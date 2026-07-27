@@ -1,5 +1,6 @@
 from search import search_students
 from profile import profile_page
+from edit_profile import edit_profile
 
 def home_page(logged_in_user):
 
@@ -13,7 +14,7 @@ def home_page(logged_in_user):
         print("3. 💬 Messages")
         print("4. 👤 Profile")
         print("5. 🚪 Logout")
-        print("6. 🖋️ Profile")
+        print("6. 🖋️ Edit Profile")
 
         choice = input("Choice: ")
 
