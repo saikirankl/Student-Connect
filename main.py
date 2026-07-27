@@ -16,7 +16,7 @@ users = get_all_users()
 
 
 
-
+logged_in_user = None 
 
 
 print("=====Student Connect=====")
@@ -27,6 +27,8 @@ option = input("Choose an option: ")
 
 if option == "1":
     register()
+    print("\nPlease login to continue.")
+    logged_in_user = login_user()
 
 elif option == "2":
     logged_in_user = login_user()
